@@ -21,8 +21,8 @@ public class School {
         students.remove(studentId);
     }
 
-    public List<Course> getStudentCourses(Integer studentId) {
-        return students.getOrDefault(studentId, null).getCourses();
+    public List<Course> getStudentCourses(Student student) {
+        return students.getOrDefault(student.getStudentId(), null).getCourses();
     }
 
     public Map<Integer, Student> getStudents() {
