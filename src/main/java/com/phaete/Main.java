@@ -68,11 +68,11 @@ public class Main {
         school.addStudent(bruce);
         school.addStudent(tony);
 
-        System.out.println(school);
+//        System.out.println(school);
 
         Pharmacy pharmacy = new Pharmacy();
-        pharmacy.save(new Medication("Aspirin", 10.5, 100));
-        pharmacy.save(new Medication("Ibuprofen", 20.2, 150));
+        pharmacy.save(new Medication("Aspirin", 10.5, "In Stock"));
+        pharmacy.save(new Medication("Ibuprofen", 20.2, "In Stock"));
 
         pharmacy.printAll();
     }
