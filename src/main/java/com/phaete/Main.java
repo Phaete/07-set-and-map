@@ -23,9 +23,9 @@ public class Main {
         set.remove("456");
 
         // a set can not contain duplicate items
-        System.out.println(set); // -> [123]
+//        System.out.println(set); // -> [123]
         set.add("123"); // 123 is already in the set, so nothing happens
-        System.out.println(set); // -> [123]
+//        System.out.println(set); // -> [123]
 
 
         // Map -> Key, Value
@@ -38,16 +38,16 @@ public class Main {
         map.put(p2.getSocialSecNum(), p2);
 
         // print whole map
-        System.out.println(map);
+//        System.out.println(map);
 
         // access value at key 123
-        System.out.println(map.get("123"));
+//        System.out.println(map.get("123"));
 
         // just get values
-        System.out.println(map.values());
+//        System.out.println(map.values());
 
         // just get keys
-        System.out.println(map.keySet());
+//        System.out.println(map.keySet());
 
         // remove object by key
         map.remove("123"); // if the key doesn't exist, nothing happens

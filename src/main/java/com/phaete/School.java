@@ -3,6 +3,7 @@ package com.phaete;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 public class School {
 
@@ -24,4 +25,31 @@ public class School {
         return students.getOrDefault(studentId, null).getCourses();
     }
 
+    public Map<Integer, Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(Map<Integer, Student> students) {
+        this.students = students;
+    }
+
+    @Override
+    public String toString() {
+        return "School{" +
+                "students=" + students +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        School school = (School) o;
+        return Objects.equals(students, school.students);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(students);
+    }
 }
