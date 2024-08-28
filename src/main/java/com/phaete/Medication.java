@@ -5,9 +5,9 @@ import java.util.Objects;
 public class Medication {
     private String name;
     private double price;
-    private int availability;
+    private String availability;
 
-    public Medication(String name, double price, int availability) {
+    public Medication(String name, double price, String availability) {
         this.name = name;
         this.price = price;
         this.availability = availability;
@@ -21,7 +21,7 @@ public class Medication {
         return price;
     }
 
-    public int getAvailability() {
+    public String getAvailability() {
         return availability;
     }
 
@@ -33,7 +33,7 @@ public class Medication {
         this.price = price;
     }
 
-    public void setAvailability(int availability) {
+    public void setAvailability(String availability) {
         this.availability = availability;
     }
 

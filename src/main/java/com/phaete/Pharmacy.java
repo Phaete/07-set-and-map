@@ -7,7 +7,7 @@ public class Pharmacy {
     private Map<String, Medication> medications = new HashMap<>();
 
     public int getCount(Medication medication) {
-        return medications.get(medication.getName()).getAvailability();
+        return medications.size();
     }
 
     public void save(Medication medication) {
